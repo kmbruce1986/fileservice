@@ -15,6 +15,7 @@ public class User {
     @Column(name = "name")
     private String name;
 
+//    lazy is the default - can be left out
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Folder> folders;
 

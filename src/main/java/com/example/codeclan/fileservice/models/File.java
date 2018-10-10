@@ -8,9 +8,9 @@ public class File {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
     private Long id;
 
+//    if column name is left blank, it will default to the property
     @Column(name = "name")
     private String name;
 
