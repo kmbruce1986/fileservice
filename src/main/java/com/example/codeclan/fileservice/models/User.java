@@ -1,6 +1,7 @@
 package com.example.codeclan.fileservice.models;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -19,6 +20,7 @@ public class User {
 
     public User(String name) {
         this.name = name;
+        this.folders = new ArrayList<Folder>();
     }
 
     public User() {
